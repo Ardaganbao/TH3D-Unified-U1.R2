@@ -39,6 +39,8 @@
     #if ENABLED(SHOW_BOOTSCREEN) && ENABLED(SHOW_CUSTOM_BOOTSCREEN)
       #if ENABLED(TM3D_BOOT)
         #include "_BootscreenTM3D.h"
+      #elif ENABLED(ARDA_BOOT)  
+        #include "_BootscreenARDA3D.h"
       #elif ENABLED(TORNADO_BOOT) && ENABLED(TORNADO)
         #include "_BootscreenTORNADO.h"
       #elif ENABLED(TARANTULA_PRO_BOOT) && ENABLED(TARANTULA_PRO)

@@ -196,7 +196,7 @@
 //===========================================================================
 // Creality CR-10 Options - Select 'Sanguino 1284P' from Tools > Board
 //===========================================================================
-//#define CR10
+#define CR10
 //#define CR10_MINI
 //#define CR10_S4
 //#define CR10_S5
@@ -207,7 +207,7 @@
 //#define EZOUT_ENABLE
 
 // EZABL Probe Mounts
-//#define CR10_OEM
+#define CR10_OEM
 //#define CR10_VOLCANO
 //#define CR10_V6HEAVYDUTY
 //#define CR10_FANG
@@ -856,7 +856,7 @@
 
 // If you want more or less EZABL probe points change the number below (only used if EZABL enabled)
 // Default is 3 which gives you 3x3 grid for a total of 9 points. STICK WITH ODD NUMBERS
-#define EZABL_POINTS 3
+#define EZABL_POINTS 5
 
 // If you want to change how far in or out the probe senses change EZABL_PROBE_EDGE value below
 // Most Machines - 35
@@ -1005,7 +1005,7 @@
 //#define FAN_FIX
 
 // Use your own printer name
-//#define USER_PRINTER_NAME "CHANGE ME" 
+#define USER_PRINTER_NAME "ArdaPrint" 
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -1017,6 +1017,10 @@
 
 // Use TinyMachines Bootscreen instead of TH3D
 //#define TM3D_BOOT
+
+
+// Use Arda Bootscreeen instead of TH3D
+#define ARDA_BOOT
 
 // Disable Bootscreen completely
 //#define DISABLE_BOOT
