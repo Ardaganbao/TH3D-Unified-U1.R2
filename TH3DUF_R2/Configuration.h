@@ -174,7 +174,7 @@
 // You can get the LCD conversion kit here: https://www.th3dstudio.com/product/evonvo-artillery-sidewinder-x1-lcd-conversion-kit/
 
 // EZABL Probe Mounts
-//#define SIDEWINDER_X1_OEM
+//#define SIDEWINDER_X1_OEM //NOT FINISHED YET. WILL BE RELEASED AT A LATER DATE.
 //#define CUSTOM_PROBE
 
 //===========================================================================
@@ -747,14 +747,17 @@
 // Patreon Link: https://www.patreon.com/join/andrivet
 
 //===========================================================================
-// Wanhao i3 MINI Options - Select 'Arduino Mega 2560' from Tools > Board
+// Wanhao i3 MINI (V1/V2) Options - Select 'Arduino Mega 2560' from Tools > Board
 //===========================================================================
 //#define WANHAO_I3MINI
+//#define WANHAO_I3MINI_V2
 
 // EZABL Probe Mounts
 //#define WANHAO_I3MINI_OEM
 //#define WANHAO_I3MINI_OEM_EZABLMINI
 //#define CUSTOM_PROBE
+
+// If you have the V1 and you've added a heated bed, just uncomment the V2 option
 
 //===========================================================================
 // Wanhao D6 Options - Select 'Arduino Mega 2560' from Tools > Board
@@ -1100,7 +1103,7 @@
 
 #define LCD_LANGUAGE en
 
-#define UNIFIED_VERSION "TH3D U1.R2.B1"
+#define UNIFIED_VERSION "TH3D U1.R2.B4"
 #include "Configuration_backend.h"
 
 #endif // CONFIGURATION_H

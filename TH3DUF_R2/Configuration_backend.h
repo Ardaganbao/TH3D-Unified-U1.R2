@@ -8,6 +8,10 @@
 
 #include "Configuration_th3d.h"
 
+#if ENABLED(WANHAO_I3MINI_V2)
+  #define WANHAO_I3MINI
+#endif
+
 #if DISABLED(TH3DINHOUSEMACHINE)
   #if DISABLED(MKS_PRINTER)
     #if ENABLED(TMC_CREALITY_BOARD) || ENABLED(CR10S_PRO) || ENABLED(CR10_V2) || ENABLED(CR10_MAX)
@@ -1417,7 +1421,7 @@
   #define PRINTER_ENABLED_CHECK
 #endif
 
-//Artillery AL-4 Settings
+//Artillery X1 Settings
 #if ENABLED(SIDEWINDER_X1)
   #ifndef MOTHERBOARD
     #define MOTHERBOARD BOARD_MKS_GEN_L
@@ -1488,6 +1492,12 @@
   #define ENCODER_STEPS_PER_MENU_ITEM 1
   
   #define PRINTER_ENABLED_CHECK
+
+  #define RGB_LED
+  #define RGB_LED_R_PIN 5
+  #define RGB_LED_G_PIN 4
+  #define RGB_LED_B_PIN 6
+  #define PRINTER_EVENT_LEDS
   
 #endif
 
@@ -2325,8 +2335,8 @@
   #endif
   
   #if ENABLED(ENDER5)
-    #define X_BED_SIZE 235
-    #define Y_BED_SIZE 235
+    #define X_BED_SIZE 220
+    #define Y_BED_SIZE 220
     #define Z_MAX_POS 300
   #endif
 
@@ -3176,7 +3186,7 @@
 #define TEMP_SENSOR_4 0
 
 #if DISABLED(TH3DINHOUSEMACHINE)
-  #if ENABLED(AC_BED) || ENABLED(WANHAO_I3MINI)
+  #if ENABLED(AC_BED) || (ENABLED(WANHAO_I3MINI) && DISABLED(WANHAO_I3MINI_V2))
     #define TEMP_SENSOR_BED 0
   #elif ENABLED(KNOWN_BED_THERMISTOR)
     #define TEMP_SENSOR_BED KNOWN_BED_THERMISTOR_VALUE
